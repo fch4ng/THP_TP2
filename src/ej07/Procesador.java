@@ -12,9 +12,9 @@ public class Procesador {
 		this.modelo = modelo;
 	}
 	
-	public boolean notificatTempCritica() {
+	public void notificatTempCritica() {
 		
-	return;	
+		
 	}
 
 }
