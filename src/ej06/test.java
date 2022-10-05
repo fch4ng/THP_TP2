@@ -8,14 +8,16 @@ public class test {
 
 	public static void main(String[] args) {
 		
-		final String FINAL = "FIN";
+		      final String FINAL = "FIN";
 		final int CIENRESULTADOS = 100;
-		String lanzar = "";
-		int resultado1;
-		int resultado2;
-		int acumResultados = 0;
-		int contResultados = 0;
-		int promResultados;
+		        
+		           String lanzar = "";
+		      int acumResultados = 0;
+		   	  int contResultados = 0;
+		
+				int resultado1;
+				int resultado2;
+				int promResultados;
 		
 		Dado dado1 = new Dado();
 		Dado dado2 = new Dado();
@@ -28,9 +30,9 @@ public class test {
 			if(resultado1 == resultado2) {
 				System.out.println("Ambos dados dieron el mismo resultado");
 			}else if(resultado1 > resultado2){
-				System.out.println("El resultado mayor es " + resultado1);
+				System.out.println("El resultado mayor es " + resultado1 + " dado 1");
 			}else{
-				System.out.println("El resultado mayor es " + resultado2);
+				System.out.println("El resultado mayor es " + resultado2 + " dado 2");
 			}
 			
 			acumResultados = acumResultados + (resultado1 + resultado2);
