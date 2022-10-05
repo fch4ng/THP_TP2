@@ -10,12 +10,5 @@ public class LectoraDvd {
 		this.esGrabadora = esGrabadora;
 	}
 	
-	public void reproducir () {
-		
-	}
-
-	public boolean grabar() {
-		
-		return;
-	}
+	
 }
