@@ -22,7 +22,7 @@ public class test {
 		Dado dado1 = new Dado();
 		Dado dado2 = new Dado();
 		
-		do {
+		do {//revisa loop e if porque los valores se repiten sin cambiar nunca
 			
 			resultado1 = dado1.getValor();
 			resultado2 = dado2.getValor();
