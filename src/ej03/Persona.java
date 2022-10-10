@@ -24,7 +24,5 @@ public class Persona {
 		
 		return '"'+ nombre +" "+  apellido + '"';
 	}
-//verifica como setear los atributos a null	
-	
 
 }
