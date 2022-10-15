@@ -8,9 +8,11 @@ public class Computadora {
 	private Tipo tipo;
 	
 	
-	public Computadora(String marca, LectoraDvd lectoraDvd) {
+	public Computadora(String marca, LectoraDvd lectoraDvd, Procesador procesador, Tipo tipo) {
 		this.marca = marca;
 		this.lectoraDvd = lectoraDvd;
+		this.procesador = procesador;
+		this.tipo = tipo;
 		
 	}
 	

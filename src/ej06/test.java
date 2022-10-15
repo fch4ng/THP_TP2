@@ -22,10 +22,10 @@ public class test {
 		Dado dado1 = new Dado();
 		Dado dado2 = new Dado();
 		
-		do {//revisa loop e if porque los valores se repiten sin cambiar nunca
+		do {
 			
-			resultado1 = dado1.getValor();
-			resultado2 = dado2.getValor();
+			resultado1 = dado1.tirar();
+			resultado2 = dado2.tirar();
 			
 			if(resultado1 == resultado2) {
 				System.out.println("Ambos dados dieron el mismo resultado");
