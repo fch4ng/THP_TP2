@@ -8,11 +8,11 @@ public class TarjetaDeCredito {
 	private double acumuladoActual;
 	
 	
-	public TarjetaDeCredito(String numero, String titular, double limiteDeCompra, double acumuladoActual) {
+	public TarjetaDeCredito(String numero, String titular, double limiteDeCompra) {
 		this.numero = numero;
 		this.titular = titular;
 		this.limiteDeCompra = limiteDeCompra;
-		acumuladoActual = 0;
+		this.acumuladoActual = 0;
 	}
 
 
@@ -45,31 +45,51 @@ public class TarjetaDeCredito {
 		this.limiteDeCompra = limiteDeCompra;
 	}
 	
-	public double montoDisponible() {
+	public double montoDisponible() {//tengo que actualizar con un if para caso de cambio de limite return muestre 0
 		
 		double montoDisponible = limiteDeCompra - acumuladoActual;
 		
 		return montoDisponible;
 	}
 	
-	private boolean compraPosible(double montoCompra, double montoDisponible) {
+	private boolean compraPosible(double montoDeCompra) {
 		
-		boolean compraPosible;
+		boolean compraPosible = false;
 		
-		compraPosible = montoDisponible >= montoCompra;
-		
+		if (montoDisponible() > montoDeCompra) {
+			compraPosible = true;
+		}else {
+			
+		}
+				
 		return compraPosible;
 	}
 	
-	public boolean realizarCompra(double comprar) {
+	private void acumularGastoActual(double montoDeCompra) {
 		
-		//compraPosible(double montoCompra, double montoDisponible); puedo llamar a un metodo desde adentro de otro para verifcar si la compra es posible?
-		
-		return;
+		acumuladoActual = acumuladoActual + montoDeCompra;
 	}
 	
-	private double acumularGastoActual() {
+	public boolean realizarCompra(double montoDeCompra) {
 		
+		boolean realizarCompra = false;
+		
+		if(compraPosible(montoDeCompra)) {
+			
+			realizarCompra = true;
+			
+			acumularGastoActual(montoDeCompra);
+		}
+		
+		return realizarCompra;
+	}
+
+
+
+	@Override
+	public String toString() {
+		return "TarjetaDeCredito [numero=" + numero + ", titular=" + titular + ", limiteDeCompra=" + limiteDeCompra
+				+ ", acumuladoActual=" + acumuladoActual + ", montoDisponible()=" + montoDisponible() + "]";
 	}
 }
 

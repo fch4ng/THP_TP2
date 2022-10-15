@@ -1,0 +1,14 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>380</x><y>60</y><w>260</w><h>240</h></coordinates><panel_attributes>TarjetaDeCredito
+--
+-numero: String
+-titular: String
+-limiteDeCompra: double
+-acumuladoActual: double
+
+--
++tarjetaDeCredito(String, String, double):
++montoDisponible(): double
+-compraPosible(double): boolean
++actualizarLimite(): double
+-acumularGastoActula(double): 
++realizarCompra(double): boolean</panel_attributes><additional_attributes></additional_attributes></element></diagram>
