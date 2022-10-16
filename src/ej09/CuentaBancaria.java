@@ -7,9 +7,9 @@ public class CuentaBancaria {
 	private Persona titular;
 	private Tipo    tipo;
 	
-	public CuentaBancaria(String cbu, double saldo, Persona titular, Tipo tipo) {
+	public CuentaBancaria(Persona titular, Tipo tipo) {
 		
-		this.cbu     = cbu;
+		setCbu(generarCbu());
 		this.saldo   = saldo;
 		this.titular = titular;
 		this.tipo    = tipo;
@@ -19,8 +19,8 @@ public class CuentaBancaria {
 		return cbu;
 	}
 
-	private void setCbu(String cbu) {
-		this.cbu = cbu;
+	private void setCbu() {
+		this.cbu = generarCbu();
 	}
 
 	public Persona getTitular() {
@@ -39,13 +39,12 @@ public class CuentaBancaria {
 		this.tipo = tipo;
 	} 
 	
-	private void generarCbu() {
+	private String generarCbu() {
 		
 		String cbu;
 		
-		cbu = "tengo q ver que quiere decir el enunciado con los primeros dos digitos" + "-" + Persona.getDni() + "-" + Persona.getDni().length(7);
+		cbu = "tengo q ver que quiere decir el enunciado con los primeros dos digitos" + "-" + titular.getDni() + "-" + titular.getDni().length(7);
 		
-		setCbu(cbu);
 	}
 	
 	public double obtenerSaldo() {
