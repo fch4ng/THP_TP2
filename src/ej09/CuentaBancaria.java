@@ -19,23 +19,15 @@ public class CuentaBancaria {
 		return cbu;
 	}
 
-	public void setCbu(String cbu) {
+	private void setCbu(String cbu) {
 		this.cbu = cbu;
-	}
-
-	public double getSaldo() {
-		return saldo;
-	}
-
-	public void setSaldo(double saldo) {
-		this.saldo = saldo;
 	}
 
 	public Persona getTitular() {
 		return titular;
 	}
 
-	public void setTitular(Persona titular) {
+	private void setTitular(Persona titular) {
 		this.titular = titular;
 	}
 
@@ -43,21 +35,53 @@ public class CuentaBancaria {
 		return tipo;
 	}
 
-	public void setTipo(Tipo tipo) {
+	private void setTipo(Tipo tipo) {
 		this.tipo = tipo;
 	} 
 	
-	public void generarCbu() {
+	private void generarCbu() {
 		
+		String cbu;
+		
+		cbu = "tengo q ver que quiere decir el enunciado con los primeros dos digitos" + "-" + Persona.getDni() + "-" + Persona.getDni().length(7);
+		
+		setCbu(cbu);
 	}
 	
-	public void depositar(double saldo) {
-		
-	}
-	
-	public boolean extraer(double saldo) {
-	
-		return;
+	public double obtenerSaldo() {
+		return saldo;
 	}
 
+	private void setSaldo(double saldo) {
+		this.saldo = saldo;
+	}
+	
+	public void depositar(double dineroDepositado) {
+		
+		double saldoActualizado;
+		
+		saldoActualizado = obtenerSaldo() + dineroDepositado;
+		
+		setSaldo(saldoActualizado);
+		
+	}
+	
+	public boolean extraer(double dineroSolicitado) {
+		
+		double saldoActualizado;
+		boolean extraccionExitosa = false;
+		
+		if (obtenerSaldo() > dineroSolicitado) {
+			
+			saldoActualizado = obtenerSaldo() - dineroSolicitado;
+			
+			setSaldo(saldoActualizado);
+			
+			extraccionExitosa = true;
+		}
+	
+		return extraccionExitosa;
+	}
+		
+	
 }

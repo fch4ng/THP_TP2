@@ -17,7 +17,7 @@ public class Persona {
 		this.cuentaBancaria = cuentaBancaria;
 	}
 
-	public String getDni() {
+	public static String getDni() {
 		return dni;
 	}
 

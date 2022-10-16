@@ -1,0 +1,44 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>60</x><y>310</y><w>210</w><h>190</h></coordinates><panel_attributes>Cuenta Bancaria
+--
+-cbu: String
+-saldo: double
+
+--
+-generarCbu():
++obtenerSaldo(): double
++depositar(double): void
++extraer(double): boolean
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>410</x><y>310</y><w>210</w><h>190</h></coordinates><panel_attributes>Persona
+--
+-dni: String
+-nombre: String
+-apellido: String
+
+--
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>730</x><y>310</y><w>210</w><h>190</h></coordinates><panel_attributes>Domicilio
+--
+-calle: String
+-altura: String
+-barrio: String
+
+--
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>370</x><y>0</y><w>210</w><h>190</h></coordinates><panel_attributes>Principal
+--
+
+--
++main(): void
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>260</x><y>340</y><w>170</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+-cuenta bancaria
+m1=0..*</panel_attributes><additional_attributes>150;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>610</x><y>340</y><w>140</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+-domicilio
+m1=1</panel_attributes><additional_attributes>120;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>60</x><y>570</y><w>210</w><h>190</h></coordinates><panel_attributes>&lt;enum&gt;
+Tipo
+--
++CAJA_DE_AHORRO
++CUENTA_CORRIENTE
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>160</x><y>490</y><w>50</w><h>100</h></coordinates><panel_attributes>lt=&lt;-
+-tipo
+m1=1</panel_attributes><additional_attributes>10;80;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>150</x><y>90</y><w>240</w><h>240</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;220;10;10;220;10</additional_attributes></element><element><id>Relation</id><coordinates><x>470</x><y>180</y><w>30</w><h>150</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;130;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>570</x><y>90</y><w>240</w><h>240</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>220;220;220;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>260</x><y>180</y><w>160</w><h>520</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;500;130;500;140;10</additional_attributes></element></diagram>

@@ -45,9 +45,14 @@ public class TarjetaDeCredito {
 		this.limiteDeCompra = limiteDeCompra;
 	}
 	
-	public double montoDisponible() {//tengo que actualizar con un if para caso de cambio de limite return muestre 0
+	public double montoDisponible() {
 		
 		double montoDisponible = limiteDeCompra - acumuladoActual;
+		
+		if (montoDisponible < 0) {
+			
+			montoDisponible = 0;
+		}
 		
 		return montoDisponible;
 	}
