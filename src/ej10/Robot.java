@@ -18,13 +18,13 @@ public class Robot {
 
 	public void saludar() {
 		
-		System.out.println("Hola, mi nombre es " + this.nombre + " ¿En que puedo ayudarte?" );
+		System.out.println("Hola, mi nombre es " + getNombre() + " ï¿½En que puedo ayudarte?" );
 		
 	}
 	
 	public void saludar (Persona persona) {
 		
-		System.out.println("Hola " + persona.getNombre() + " mi nombre es " + this.nombre + " ¿En que puedo ayudarte?" );
+		System.out.println("Hola " + persona.getNombre() + " mi nombre es " + getNombre() + " ï¿½En que puedo ayudarte?" );
 		
 	}
 
