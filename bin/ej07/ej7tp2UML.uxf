@@ -1,0 +1,33 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>490</x><y>40</y><w>210</w><h>190</h></coordinates><panel_attributes>Computadora
+--
+-marca: String
+
+--
++prender(): void
++apagar(): void
++reiniciar(): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>100</x><y>40</y><w>210</w><h>190</h></coordinates><panel_attributes>Persona
+--
+-nombre: String
+-apellido: String
+-dni: String
+--
++trabajar(): void
++descansar(): void
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>60</x><y>330</y><w>210</w><h>190</h></coordinates><panel_attributes>&lt;enum&gt;
+Tipo
+--
++DESKTOP
++LAPTOP
++ALL_IN_ONE
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>370</x><y>320</y><w>210</w><h>190</h></coordinates><panel_attributes>Procesador
+--
+-marca: String
+-modelo: String
+-nivelActualDeTemperatura: int
+--
++notificacionTempCritica(): boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>680</x><y>320</y><w>210</w><h>190</h></coordinates><panel_attributes>Lector de DVD
+--
+-marca: String
+
+--
+</panel_attributes><additional_attributes></additional_attributes></element></diagram>

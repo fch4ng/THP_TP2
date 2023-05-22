@@ -4,8 +4,8 @@ public class Turnera {
 	
 	int ultimoNumeroOtorgado;
 	
-	public Turnera(int ultimoNumeroOtorgado) {
-		this.ultimoNumeroOtorgado = ultimoNumeroOtorgado;
+	public Turnera() {
+		this.ultimoNumeroOtorgado = 0;
 	}
 	
 	public int obtenerUltimoNumeroOtorgado() {
@@ -13,14 +13,14 @@ public class Turnera {
 	}
 	
 	public void otorgarProximoNumero() {
-		obtenerUltimoNumeroOtorgado() +=; //ver video como resolvio contador
+		ultimoNumeroOtorgado += 1;
 	}
 	
 	public void resetearContador(int valorDeReseteo) {
 		
 		final int VALORMINIMO = 0;
 		
-		if(valorDeReseteo != null && valorDeReseteo >= VALORMINIMO) {
+		if(valorDeReseteo > VALORMINIMO) {
 			
 			setUltimoNumero(valorDeReseteo);
 		}else {
@@ -28,6 +28,13 @@ public class Turnera {
 		}
 	}
 
+	public void resetearContador() {
+	
+		final int VALORMINIMO = 0;
+	
+		setUltimoNumero(VALORMINIMO);
+		}
+	
 	private int setUltimoNumero(int valorDeReseteo) {
 		return this.ultimoNumeroOtorgado = valorDeReseteo;
 		

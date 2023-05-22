@@ -19,7 +19,7 @@ public class CuentaBancaria {
 		return cbu;
 	}
 
-	private void setCbu() {
+	private void setCbu(String string) {
 		this.cbu = generarCbu();
 	}
 
