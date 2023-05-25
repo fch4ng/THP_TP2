@@ -8,13 +8,13 @@ public class Persona {
 	private Domicilio domicilio;
 	private CuentaBancaria cuentaBancaria;
 	
-	public Persona(String dni, String nombre, String apellido, Domicilio domicilio, CuentaBancaria cuentaBancaria) {
+	public Persona(String dni, String nombre, String apellido, Domicilio domicilio) {
 		
 		this.dni            = dni;
 		this.nombre         = nombre;
 		this.apellido       = apellido;
 		this.domicilio      = domicilio;
-		this.cuentaBancaria = cuentaBancaria;
+		
 	}
 
 	public  String getDni() {
