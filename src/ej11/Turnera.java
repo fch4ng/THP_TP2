@@ -8,14 +8,14 @@ public class Turnera {
 		this.ultimoNumeroOtorgado = 0;
 	}
 	
-	public int obtenerUltimoNumeroOtorgado() {
-		return ultimoNumeroOtorgado;
-	}
-	
 	public void otorgarProximoNumero() {
 		ultimoNumeroOtorgado += 1;
 	}
 	
+	public int obtenerUltimoNumeroOtorgado() {
+		return ultimoNumeroOtorgado;
+	}
+
 	public void resetearContador(int valorDeReseteo) {
 		
 		final int VALORMINIMO = 0;
