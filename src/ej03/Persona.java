@@ -6,7 +6,7 @@ public class Persona {
 	private String apellido;
 	
 	public Persona() {
-		nombre = "";
+		  nombre = "";
 		apellido = "";
 	}
 	

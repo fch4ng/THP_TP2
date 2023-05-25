@@ -6,11 +6,11 @@ public class Principal {
 		
 		Domicilio domicilioUnico = new Domicilio("Yatay", "240", "Almagro");
 		
-		Persona persona0 = new Persona("12345678", "Fulano", "Gomez", domicilioUnico, cajaDeAhorro);
+		Persona persona0 = new Persona("12345678", "Fulano", "Gomez", domicilioUnico, );
 		
 		CuentaBancaria cajaDeAhorro = new CuentaBancaria(persona0, Tipo.CAJA_DE_AHORRO);
 		
-		Persona persona1 = new Persona("9123456", "Megana", "Torres", domicilioUnico, cuentaCorriente);
+		Persona persona1 = new Persona("9123456", "Megana", "Torres", domicilioUnico, Tipo.CUENTA_CORRIENTE);
 		
 		CuentaBancaria cuentaCorriente = new CuentaBancaria(persona1, Tipo.CUENTA_CORRIENTE);
 

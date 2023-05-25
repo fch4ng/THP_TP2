@@ -15,33 +15,27 @@ public class TarjetaDeCredito {
 		this.acumuladoActual = 0;
 	}
 
-
 	public String getNumero() {
 		return numero;
 	}
-
-
-	public void setNumero(String numero) {
-		this.numero = numero;
-	}
-
 
 	public String getTitular() {
 		return titular;
 	}
 
-
-	public void setTitular(String titular) {
-		this.titular = titular;
-	}
-
-
 	public double getLimiteDeCompra() {
 		return limiteDeCompra;
 	}
+	
+	private void setNumero(String numero) {
+		this.numero = numero;
+	}
 
+	private void setTitular(String titular) {
+		this.titular = titular;
+	}
 
-	public void setLimiteDeCompra(double limiteDeCompra) {
+	public void actualizarLimite(double limiteDeCompra) {
 		this.limiteDeCompra = limiteDeCompra;
 	}
 	
@@ -68,6 +62,7 @@ public class TarjetaDeCredito {
 		}
 				
 		return compraPosible;
+		
 	}
 	
 	private void acumularGastoActual(double montoDeCompra) {
@@ -87,9 +82,8 @@ public class TarjetaDeCredito {
 		}
 		
 		return realizarCompra;
-	}
-
-
+	
+	}	
 
 	@Override
 	public String toString() {

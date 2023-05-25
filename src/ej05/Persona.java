@@ -7,7 +7,7 @@ public class Persona {
 	private Domicilio domicilio;
 	
 	public Persona() {
-		nombre = "";
+		  nombre = "";
 		apellido = "";
 		}
 	

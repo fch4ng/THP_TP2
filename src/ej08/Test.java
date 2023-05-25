@@ -10,7 +10,7 @@ public class Test {
 		
 		tarjeta0.toString();
 		
-		tarjeta0.setLimiteDeCompra(3000);
+		tarjeta0.actualizarLimite(3000);
 		
 		tarjeta0.realizarCompra(4000);
 		

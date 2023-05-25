@@ -7,7 +7,7 @@ public class Domicilio {
 	private String ciudad;
 	
 	public Domicilio() {
-		calle = "";
+		 calle = "";
 		numero = "";
 		ciudad = "";
 	}
