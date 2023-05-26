@@ -9,25 +9,25 @@ public class Test {
 		
 		Calculadora calculin = new Calculadora();
 		
-		System.out.println(calculin.sumar(a, b));
+		System.out.println("Suma " + calculin.sumar(a, b));
 		
-		System.out.println(calculin.resta(a, b));
+		System.out.println("Resta " + calculin.resta(a, b));
 		
-		System.out.println(calculin.resta(b, a));
+		System.out.println("Resta " +calculin.resta(b, a));
 		
-		System.out.println(calculin.multiplicar(a, b));
+		System.out.println("Multiplicacion " +calculin.multiplicar(a, b));
 		
-		System.out.println(calculin.dividir(a, b));
+		System.out.println("Division " +calculin.dividir(a, b));
 		
-		System.out.println(calculin.dividir(b, a));
+		System.out.println("Division " +calculin.dividir(b, a));
 		
-		System.out.println(calculin.dividir(a, 0));
+		System.out.println("Division " + calculin.dividir(a, 0));
 		
-		System.out.println(calculin.dividir(b, 0));
+		System.out.println("Division " +calculin.dividir(b, 0));
 		
-		System.out.println(calculin.dividir(0, a));
+		System.out.println("Division " + calculin.dividir(0, a));
 		
-		System.out.println(calculin.dividir(0, b));
+		System.out.println("Division " + calculin.dividir(0, b));
 
 	}
 

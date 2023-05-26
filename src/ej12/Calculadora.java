@@ -62,7 +62,7 @@ public class Calculadora {
 			
 			resta = nroA - nroB;
 			
-			return setResta(suma);
+			return setResta(resta);
 		}
 		
 		public int multiplicar(int nroA, int nroB) {
@@ -78,7 +78,14 @@ public class Calculadora {
 			
 			int dividir = 0;
 			
-			dividir = nroA / nroB;
+			if(nroB != 0) {
+			
+				dividir = nroA / nroB;
+			
+			}else {
+			
+				dividir = 0;
+			}
 			
 			return setDividir(dividir);
 		}
