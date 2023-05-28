@@ -18,9 +18,11 @@ public class Test {
 		
 		nota = Integer.parseInt(input.next());
 		
+		//aqui tengo que comenzar a acumular las notas y contarlas para sacar promedio
+		
 		}while(nota != 0);
 		
-		System.out.println("Cantidad de Alumnos " + promedioDeNotas.contador());
+		System.out.println("Cantidad de Alumnos " + promedioDeNotas.contador.obtenerValor());
 		
 		System.out.println("Promedio de Notas " + promedioDeNotas.obtenerValor());
 		
