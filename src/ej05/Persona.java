@@ -4,7 +4,7 @@ public class Persona {
 		
 	private String nombre;
 	private String apellido;
-	private Domicilio domicilio;
+	private Computadora domicilio;
 	
 	public Persona() {
 		  nombre = "";
@@ -18,11 +18,11 @@ public class Persona {
 		this.apellido = apellido;
 	}
 	
-	public Domicilio getDomicilio() {
+	public Computadora getDomicilio() {
 		return domicilio;
 	}
 
-	public void setDomicilio(Domicilio domicilio) {
+	public void setDomicilio(Computadora domicilio) {
 		this.domicilio = domicilio;
 	}
 

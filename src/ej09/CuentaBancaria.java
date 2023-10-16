@@ -10,9 +10,8 @@ public class CuentaBancaria {
 	public CuentaBancaria(Persona titular, Tipo tipo) {
 		
 		setCbu(generarCbu());
-		this.saldo   = saldo;
-		this.titular = titular;
-		this.tipo    = tipo;
+		setTitular(titular);
+		setTipo(tipo);
 	}
 
 	public String getCbu() {
@@ -43,7 +42,7 @@ public class CuentaBancaria {
 		
 		String cbu;
 		
-		cbu = "tengo q ver que quiere decir el enunciado con los primeros dos digitos" + "-" + titular.getDni() + "-" + titular.getDni().length(7);
+		cbu = "tengo q ver que quiere decir el enunciado con los primeros dos digitos" + "-" + titular.getDni() + "-" + titular.getDni().charAt(7);
 		
 	}
 	

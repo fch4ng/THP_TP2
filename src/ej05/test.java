@@ -6,7 +6,7 @@ public class test {
 		
 		Persona persona0  = new Persona();
 		Persona persona1 = new Persona();
-		Domicilio domicilio0 = new Domicilio();
+		Computadora domicilio0 = new Computadora();
 		
 		
 		persona0.setNombre("Fulano");

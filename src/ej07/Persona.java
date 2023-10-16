@@ -1,13 +1,13 @@
 package ej07;
 
-import ej05.Domicilio;
+import ej05.Computadora;
 
 public class Persona {
 	
 	private String nombre;
 	private String apellido;
 	private String dni;
-	private Domicilio computadora;
+	private Computadora computadora;
 	
 	
 	public Persona(String nombre, String apellido, String dni) {

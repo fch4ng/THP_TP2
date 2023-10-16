@@ -6,8 +6,8 @@ public class Persona {
 	private String apellido;
 	
 	public Persona() {
-		  nombre = "";
-		apellido = "";
+		  this.nombre = "";
+		this.apellido = "";
 	}
 	
 	public void setNombre(String nombre) {
@@ -22,7 +22,7 @@ public class Persona {
 	public String getNombreCompleto() {
 		
 		
-		return '"'+ nombre +" "+  apellido + '"';
+		return '"'+ this.nombre +" "+  this.apellido + '"';
 	}
 
 }

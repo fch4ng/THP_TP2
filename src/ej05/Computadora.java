@@ -1,15 +1,15 @@
 package ej05;
 
-public class Domicilio {
+public class Computadora {
 	
 	private String calle;
 	private String numero;
 	private String ciudad;
 	
-	public Domicilio() {
-		 calle = "";
-		numero = "";
-		ciudad = "";
+	public Computadora() {
+		 this.calle = "";
+		this.numero = "";
+		this.ciudad = "";
 	}
 
 	public String getCalle() {
@@ -39,7 +39,7 @@ public class Domicilio {
 	public String getDomicilio() {
 		
 		
-		return calle +" "+ numero +" "+ ciudad;
+		return this.calle +" "+ this.numero +" "+ this.ciudad;
 	}
 	
 	
