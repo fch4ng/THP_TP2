@@ -42,8 +42,9 @@ public class CuentaBancaria {
 		
 		String cbu;
 		
-		cbu = "tengo q ver que quiere decir el enunciado con los primeros dos digitos" + "-" + titular.getDni() + "-" + titular.getDni().charAt(7);
+		cbu = (tipo.ordinal()+10) + "-" + titular.getDni() + "-" + titular.getDni().charAt(7);
 		
+		return cbu;
 	}
 	
 	public double obtenerSaldo() {

@@ -91,9 +91,9 @@ public class Superheroe {
 		return superpoderes;
 	}
 	     
-	public void competir(Superheroe competencia) {
+	public void competir(Superheroe superHeroeAComparar) {
 		
-		
+		  = this.fuerza > superHeroeAComparar.getFuerza();
 		
 	}
 
